@@ -1,0 +1,32 @@
+{
+   "name": "api",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "rimraf dist && npx tsc",
+      "prestart": "npm run build",
+      "start": "ts-node src/index.ts",
+      "preserve": "npm run build",
+      "serve": "concurrently \"npx tsc -w\" \"nodemon dist/index.js\" ",
+      "typeorm": "typeorm-ts-node-commonjs"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "@types/express": "^4.17.17",
+      "@types/node": "^16.11.10",
+      "ts-node": "10.7.0",
+      "typescript": "^5.2.0-dev.20230605"
+   },
+   "dependencies": {
+      "concurrently": "^8.1.0",
+      "express": "^4.18.2",
+      "pg": "^8.4.0",
+      "reflect-metadata": "^0.1.13",
+      "rimraf": "^5.0.1",
+      "typeorm": "0.3.16"
+   }
+}
