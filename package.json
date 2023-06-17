@@ -18,12 +18,20 @@
    "devDependencies": {
       "@types/express": "^4.17.17",
       "@types/node": "^16.11.10",
+      "prisma": "^4.15.0",
       "ts-node": "10.7.0",
       "typescript": "^5.2.0-dev.20230605"
    },
    "dependencies": {
+      "@prisma/client": "^4.15.0",
+      "@types/bcrypt": "^5.0.0",
+      "@types/jsonwebtoken": "^9.0.2",
+      "bcrypt": "^5.1.0",
       "concurrently": "^8.1.0",
+      "cors": "^2.8.5",
       "express": "^4.18.2",
+      "jsonwebtoken": "^9.0.0",
+      "lodash": "^4.17.21",
       "pg": "^8.4.0",
       "reflect-metadata": "^0.1.13",
       "rimraf": "^5.0.1",
